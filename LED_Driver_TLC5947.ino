@@ -20,6 +20,7 @@ int CLK = 7;
 int Data = 6;
 // the setup function runs once when you press reset or power the board
 void setup() {
+  Serial.begin(9600);
   pinMode(CLK, OUTPUT);
   pinMode(Data, OUTPUT);
   digitalWrite(CLK, LOW);   // 
